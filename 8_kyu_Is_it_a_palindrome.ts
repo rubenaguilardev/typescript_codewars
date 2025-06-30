@@ -6,7 +6,7 @@ A palindrome is a word, number, phrase, or other sequence of symbols that reads 
 export const isPalindrome = (x:string): boolean => {
   const reversed = x.split('').reverse().join("").toLowerCase()
   
-  return x.toLowerCase() === reversed ? true : false
+  return x.toLowerCase() === reversed
 }
 
 console.log(isPalindrome('boB'))
