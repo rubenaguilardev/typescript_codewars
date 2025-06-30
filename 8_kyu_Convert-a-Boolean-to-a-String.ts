@@ -3,6 +3,9 @@
 // Note: Only valid inputs will be given.
 
 
-const booleanToString = (b:boolean):string => String(b)
+export const hello = (name:string = 'world'):string => (
+    !name ? 'Hello, World!' :
+    `Hello, ${name[0].toUpperCase()}${name.slice(1).toLowerCase()}!`
+)
 
-console.log(booleanToString(true))
+console.log(hello(''))
