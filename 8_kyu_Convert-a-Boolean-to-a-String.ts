@@ -3,6 +3,6 @@
 // Note: Only valid inputs will be given.
 
 
-const booleanToString = (b:boolean):string => b === true ? 'true' : 'false'
+const booleanToString = (b:boolean):string => String(b)
 
-const result = booleanToString(true)
+console.log(booleanToString(true))
