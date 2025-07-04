@@ -21,7 +21,6 @@ Examples
 
 export const isSquare = (n: number): boolean => {
     const sqrtOfN = Math.sqrt(n)
+    console.log(sqrtOfN)
     return Number.isInteger(sqrtOfN)
 }
-
-console.log(isSquare(36))
