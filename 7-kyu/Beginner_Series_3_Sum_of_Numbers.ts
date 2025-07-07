@@ -20,7 +20,6 @@ export const getSum = (a: number, b: number): number => {
     for (let i = start; i <= end; i++) {
         numArr.push(i)
     }
-  
     return numArr.reduce((num, nextNum) => num + nextNum)
 }
 
