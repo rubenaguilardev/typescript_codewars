@@ -14,3 +14,17 @@ I'm very curious for your solutions and the way you solve it. Maybe someone of y
 Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have also created other katas. Take a look if you enjoyed this kata! */
+
+
+const dontGiveMeFive = (start: number, end: number): number => {
+    let numCount = 0
+    for (let i = start; i <= end; i++) {
+        const strI = String(i)
+        if (!strI.includes('5')) {
+            numCount++
+        }
+    }
+    return numCount
+}
+
+console.log(dontGiveMeFive(1, 9))
